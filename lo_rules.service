@@ -1,0 +1,9 @@
+[Unit]
+Description=Service checking ip rules at lo interface for stunnel and ircd
+After=network.target
+[Service]
+ExecStart=/usr/local/bin/lo_rules.sh
+Restart=always
+User=root
+[Install]
+WantedBy=multi-user.target
