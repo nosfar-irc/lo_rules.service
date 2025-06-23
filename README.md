@@ -46,8 +46,10 @@ User=root
 WantedBy=multi-user.target
 ```
 
-At end enable and start service `lo_rules`
-
+At the end reload deamon, enable and start service `lo_rules`
+```
+systemctl daemon-reload
+```
 ```
 sudo systemctl enable lo_rules
 ```
